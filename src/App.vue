@@ -1,44 +1,51 @@
 <template>
-	<v-app>
-<!--		<v-app-bar>
-			<router-link to="/board">
+	<v-app app>
+		<v-navigation-drawer app v-model="drawer">
+			<Nav />
+		</v-navigation-drawer>
+
+		<v-app-bar app>
+			<v-app-bar-nav-icon @click="exit" v-show="!drawer"></v-app-bar-nav-icon>
+			<v-btn icon @click="exit" v-show="drawer">
 				<v-icon
-						large
 						color="lightgrey darken-2"
 				>
-					mdi-menu
+					mdi-arrow-left
 				</v-icon>
-			</router-link>
-		</v-app-bar>-->
+			</v-btn>
+		</v-app-bar>
 
-		<v-main class="flex">
-			<v-card :height="windowHeight" width="50">
-				<NavigationDrawer />
-			</v-card>
-			<router-view />
+		<!-- Sizes your content based upon application components -->
+		<v-main>
+
+			<!-- Provides the application the proper gutter -->
+			<v-container fluid>
+
+				<!-- If using vue-router -->
+				<router-view></router-view>
+			</v-container>
 		</v-main>
-
 
 	</v-app>
 </template>
 
 <script>
-import NavigationDrawer from "./components/NavigationDrawer";
+import Nav from "./components/Nav";
 
 export default {
 	components: {
-		NavigationDrawer
+		Nav
 	},
 	data: () => ({
-		windowHeight: null
+		drawer: false
 	}),
 	methods: {
-		getWindowHeight() {
-			this.windowHeight = window.innerHeight
+		exit() {
+			this.drawer = !this.drawer
 		}
 	},
 	mounted() {
-		this.getWindowHeight();
+		/*this.exit();*/
 	}
 };
 </script>

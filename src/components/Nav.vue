@@ -1,11 +1,48 @@
 <template>
+
 	<div id="nav">
-		<router-link to="/">Home</router-link>
-		<router-link to="/board">Board</router-link>
-		<router-link to="/list">List</router-link>
-		<router-link to="/statistic">Statistic</router-link>
-		<router-link to="/chats">Chats</router-link>
+		<router-link to="/">
+			<v-icon
+					large
+					color="lightgrey darken-2"
+			>
+				mdi-home
+			</v-icon>
+		</router-link>
+		<router-link to="/board">
+			<v-icon
+					large
+					color="lightgrey darken-2"
+			>
+				mdi-menu
+			</v-icon>
+		</router-link>
+		<router-link to="/list">
+			<v-icon
+					large
+					color="lightgrey darken-2"
+			>
+				mdi-finance
+			</v-icon>
+		</router-link>
+		<router-link to="/statistic">
+			<v-icon
+					large
+					color="lightgrey darken-2"
+			>
+				mdi-email
+			</v-icon>
+		</router-link>
+		<router-link to="/chats">
+			<v-icon
+					large
+					color="lightgrey darken-2"
+			>
+				mdi-account-multiple
+			</v-icon>
+		</router-link>
 	</div>
+
 </template>
 
 <script>
