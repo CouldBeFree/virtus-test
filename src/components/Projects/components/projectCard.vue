@@ -17,7 +17,10 @@
 			{{ data.spent }}
 		</div>
 		<div class="project-progress">
-			{{ data.progress }}
+			{{ data.progress }}%
+      <div class="progress-wrap">
+        <div class="progress-inner" :style="{ width: `${data.progress}%`, backgroundColor: progressColor }"></div>
+      </div>
 		</div>
 		<div class="project-status">
 			{{ data.status.name }}
@@ -33,8 +36,6 @@
 				<span> {{ data.assigned.position }} </span>
 			</div>
 		</div>
-
-
 	</div>
 </template>
 
@@ -45,11 +46,37 @@ export default {
 		data: {
 			required: true
 		}
-	}
+	},
+  computed: {
+		progressColor () {
+			if (this.data.progress < 50) {
+				return 'blue'
+      } else {
+				return 'green'
+      }
+    }
+  }
 }
 </script>
 
 <style scoped>
+  .progress-wrap {
+    width: 100%;
+    height: 10px;
+    background-color: #9EA3B4;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .progress-inner {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+
 	.project-item {
 		color: white;
 		border-radius: 5px;

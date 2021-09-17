@@ -26,7 +26,7 @@ export default {
 						left: '10 days left'
 					},
 					spent: '40 hours',
-					progress: '70%',
+					progress: '70',
 					status:  {
 						value: 'Progress',
 						name: 'Development',
@@ -50,7 +50,7 @@ export default {
 						left: '25 days left'
 					},
 					spent: '7 hours',
-					progress: '15%',
+					progress: '15',
 					status:  {
 						value: 'Progress',
 						name: 'Planning',
@@ -74,7 +74,7 @@ export default {
 						left: '2 days left'
 					},
 					spent: '56 hours',
-					progress: '90%',
+					progress: '90',
 					status:  {
 						value: 'Progress',
 						name: 'Testing',
@@ -98,7 +98,7 @@ export default {
 						left: '30 days left'
 					},
 					spent: '10 hours',
-					progress: '40%',
+					progress: '40',
 					status:  {
 						value: 'Progress',
 						name: 'Design',
@@ -122,7 +122,7 @@ export default {
 						left: '2 months left'
 					},
 					spent: '0 hours',
-					progress: '0%',
+					progress: '0',
 					status:  {
 						value: 'Quened',
 						name: 'Quened',
@@ -146,7 +146,7 @@ export default {
 						left: 'Completed'
 					},
 					spent: '59 hours',
-					progress: '100%',
+					progress: '100',
 					status:  {
 						value: 'Completed',
 						name: 'Completed',
@@ -170,7 +170,7 @@ export default {
 						left: 'Completed'
 					},
 					spent: '30 hours',
-					progress: '100%',
+					progress: '100',
 					status:  {
 						value: 'Completed',
 						name: 'Completed',
