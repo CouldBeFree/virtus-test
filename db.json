@@ -5,6 +5,7 @@
       "id": 2,
       "target": {
         "name": "Mechelle Stewart",
+				"photo": "http://virtus-images.zzz.com.ua/user-02.png",
         "role": "Frontend developer",
         "description": "Mauris interdum, quam sed fringilla elementum, nisl massa faucibus massa, in suscipit justo nisl vel nisl. Suspendisse ullamcorper scelerisque augue quis efficitur. Sed vitae dui diam. Nullam rutrum rhoncus velit eget porttitor.",
         "email": "exampleemail@gmail.com",
@@ -16,21 +17,25 @@
         {
           "id": 1,
           "name": "Mechelle Stewart",
+					"photo": "http://virtus-images.zzz.com.ua/user-02.png",
           "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
         },
         {
           "id": 2,
           "name": "Me",
+					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
           "message": "Etiam facilisis erat dui"
         },
         {
-          "id": 2,
+          "id": 3,
           "name": "Me",
+					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
           "message": "Donec molestie pretium sem maximus vulputate"
         },
         {
-          "id": 3,
+          "id": 4,
           "name": "Mechelle Stewart",
+					"photo": "http://virtus-images.zzz.com.ua/user-02.png",
           "message": "Morbi fringilla erat sed ultrices suscipit. Vestibulum in rhoncus lacus, vel ornare diam. Pellentesque pretium, eros at scelerisque fringilla, nibh mauris tempus est, ac aliquet mauris arcu ut lacus."
         }
       ]
@@ -39,6 +44,7 @@
       "id": 1,
       "target": {
         "name": "Mechelle Stewart",
+				"photo": "http://virtus-images.zzz.com.ua/user-01.png",
         "role": "UX/UI Designer",
         "description": "Mauris interdum, quam sed fringilla elementum, nisl massa faucibus massa, in suscipit justo nisl vel nisl. Suspendisse ullamcorper scelerisque augue quis efficitur. Sed vitae dui diam. Nullam rutrum rhoncus velit eget porttitor.",
         "email": "exampleemail@gmail.com",
@@ -50,21 +56,25 @@
         {
           "id": 1,
           "name": "Mechelle Stewart",
+					"photo": "http://virtus-images.zzz.com.ua/user-02.png",
           "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
         },
         {
           "id": 2,
           "name": "Me",
+					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
           "message": "Etiam facilisis erat dui"
         },
         {
           "id": 2,
           "name": "Me",
+					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
           "message": "Donec molestie pretium sem maximus vulputate"
         },
         {
           "id": 3,
           "name": "Mechelle Stewart",
+					"photo": "http://virtus-images.zzz.com.ua/user-02.png",
           "message": "Morbi fringilla erat sed ultrices suscipit. Vestibulum in rhoncus lacus, vel ornare diam. Pellentesque pretium, eros at scelerisque fringilla, nibh mauris tempus est, ac aliquet mauris arcu ut lacus."
         }
       ]

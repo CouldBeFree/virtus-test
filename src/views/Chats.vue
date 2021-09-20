@@ -1,21 +1,26 @@
 <template>
-	<h1>Chats</h1>
+	<Chat />
 </template>
 
 <script>
-import { axios } from "../utils/axios";
+import Chat from '../components/Chat'
+
+/*import { axios } from "../utils/axios";*/
 
 export default {
-	name: "Chats",
-  mounted() {
+	components: {
+		Chat
+	},
+	name: "Chats"/*,
+	mounted() {
 		axios.get('/chat')
-      .then(res => {
+			.then(res => {
 				console.log(res)
-      })
-      .catch(e => {
+			})
+			.catch(e => {
 				console.error(e)
-      })
-	}
+			})
+	}*/
 }
 </script>
 
