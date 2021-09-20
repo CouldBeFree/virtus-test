@@ -3,8 +3,19 @@
 </template>
 
 <script>
+import { axios } from "../utils/axios";
+
 export default {
-	name: "Chats"
+	name: "Chats",
+  mounted() {
+		axios.get('/chat')
+      .then(res => {
+				console.log(res)
+      })
+      .catch(e => {
+				console.error(e)
+      })
+	}
 }
 </script>
 

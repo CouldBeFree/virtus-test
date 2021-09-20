@@ -1,10 +1,73 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" },
-    { "id": 2, "title": "qwe", "author": "ddd" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "profile": { "name": "typicode" },
+  "chat": [
+    {
+      "id": 2,
+      "target": {
+        "name": "Mechelle Stewart",
+        "role": "Frontend developer",
+        "description": "Mauris interdum, quam sed fringilla elementum, nisl massa faucibus massa, in suscipit justo nisl vel nisl. Suspendisse ullamcorper scelerisque augue quis efficitur. Sed vitae dui diam. Nullam rutrum rhoncus velit eget porttitor.",
+        "email": "exampleemail@gmail.com",
+        "phone": "+438234123123",
+        "Adress": "65 Lorem St, Warsaw, PL",
+        "Organization": "Symu.co"
+      },
+      "conversation": [
+        {
+          "id": 1,
+          "name": "Mechelle Stewart",
+          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        },
+        {
+          "id": 2,
+          "name": "Me",
+          "message": "Etiam facilisis erat dui"
+        },
+        {
+          "id": 2,
+          "name": "Me",
+          "message": "Donec molestie pretium sem maximus vulputate"
+        },
+        {
+          "id": 3,
+          "name": "Mechelle Stewart",
+          "message": "Morbi fringilla erat sed ultrices suscipit. Vestibulum in rhoncus lacus, vel ornare diam. Pellentesque pretium, eros at scelerisque fringilla, nibh mauris tempus est, ac aliquet mauris arcu ut lacus."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "target": {
+        "name": "Mechelle Stewart",
+        "role": "UX/UI Designer",
+        "description": "Mauris interdum, quam sed fringilla elementum, nisl massa faucibus massa, in suscipit justo nisl vel nisl. Suspendisse ullamcorper scelerisque augue quis efficitur. Sed vitae dui diam. Nullam rutrum rhoncus velit eget porttitor.",
+        "email": "exampleemail@gmail.com",
+        "phone": "+438234123123",
+        "Adress": "65 Lorem St, Warsaw, PL",
+        "Organization": "Symu.co"
+      },
+      "conversation": [
+        {
+          "id": 1,
+          "name": "Mechelle Stewart",
+          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        },
+        {
+          "id": 2,
+          "name": "Me",
+          "message": "Etiam facilisis erat dui"
+        },
+        {
+          "id": 2,
+          "name": "Me",
+          "message": "Donec molestie pretium sem maximus vulputate"
+        },
+        {
+          "id": 3,
+          "name": "Mechelle Stewart",
+          "message": "Morbi fringilla erat sed ultrices suscipit. Vestibulum in rhoncus lacus, vel ornare diam. Pellentesque pretium, eros at scelerisque fringilla, nibh mauris tempus est, ac aliquet mauris arcu ut lacus."
+        }
+      ]
+    }
+  ]
 }
