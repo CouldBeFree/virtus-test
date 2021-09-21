@@ -1,14 +1,14 @@
 <template>
 	<div class="chat-list">
 		<ul>
-			<li :key="item.id" v-for="item in list">
+			<li @click="$emit('selected', item.id)" style="cursor: pointer;" :key="item.id" v-for="item in list">
 				<div class="chat-list__top">
-					<img :src="item.photo" alt="">
+					<img :src="item.target.photo" alt="">
 					<h3 class="h3">
-						{{ item.name }}
+						{{ item.target.name }}
 					</h3>
 				</div>
-				<p>{{ item.message }}</p>
+				<p>{{ item.conversation[0].message }}</p>
 			</li>
 		</ul>
 		<button>+ New conversation</button>
@@ -18,7 +18,13 @@
 <script>
 export default {
 	name: "chatList",
-	props: ['list']
+	props: ['list'],
+  watch: {
+		list() {
+			console.log('list', this.list)
+      this.$emit('selected', this.list[0].id)
+    }
+  }
 }
 </script>
 

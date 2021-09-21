@@ -1,6 +1,9 @@
 <template>
 	<div class="chat">
-		<ChatList :list="list" />
+		<ChatList
+      @selected="getSpecifiedData"
+      :list="data"
+    />
 		<ChatConv :conv="conv" />
 		<ChatCompanion :companion="companion" />
 	</div>
@@ -24,24 +27,32 @@ export default {
 		return {
 			list: null,
 			conv: null,
-			companion: null
+			companion: null,
+      data: null
 		}
 	},
 	mounted() {
 		axios.get('/chat')
 			.then((res) => {
-				this.list = res[0].conversation;
-				this.conv =  res[0].conversation;
-				this.companion = res[0].target;
-				/*console.log(this.list);*/
+				this.data = res
 			})
-			/*.then(res => {
-				console.log(res)
-			})*/
 			.catch(e => {
 				console.error(e)
 			})
-	}
+	},
+  methods: {
+		getSpecifiedData (query) {
+			axios.get('/chat', {
+				params: {
+					id: query
+        }
+      })
+      .then(res => {
+				this.conv =  res[0].conversation;
+				this.companion = res[0].target;
+      })
+    }
+  }
 }
 </script>
 

@@ -5,7 +5,7 @@
       "id": 2,
       "target": {
         "name": "Mechelle Stewart",
-				"photo": "http://virtus-images.zzz.com.ua/user-02.png",
+		"photo": "http://virtus-images.zzz.com.ua/user-02.png",
         "role": "Frontend developer",
         "description": "Mauris interdum, quam sed fringilla elementum, nisl massa faucibus massa, in suscipit justo nisl vel nisl. Suspendisse ullamcorper scelerisque augue quis efficitur. Sed vitae dui diam. Nullam rutrum rhoncus velit eget porttitor.",
         "email": "exampleemail@gmail.com",
