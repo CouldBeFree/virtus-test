@@ -23,16 +23,16 @@
 			{{ companion.phone }}
 		</h4>
 		<p>
-			Adress
+			Address
 		</p>
 		<h4 class="h4">
-			{{ companion.Adress }}
+			{{ companion.address }}
 		</h4>
 		<p>
 			Organization
 		</p>
 		<h4 class="h4">
-			{{ companion.Organization }}
+			{{ companion.organization }}
 		</h4>
 	</div>
 </template>

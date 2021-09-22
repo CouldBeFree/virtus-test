@@ -8,7 +8,7 @@
 						{{ item.target.name }}
 					</h3>
 				</div>
-				<p>{{ item.conversation[0].message }}</p>
+				<p>{{ item.target.description }}</p>
 			</li>
 		</ul>
 		<button>+ New conversation</button>

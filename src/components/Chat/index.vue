@@ -3,6 +3,7 @@
 		<ChatList
       @selected="getSpecifiedData"
       :list="data"
+      :conv="conv"
     />
 		<ChatConv :conv="conv" />
 		<ChatCompanion :companion="companion" />

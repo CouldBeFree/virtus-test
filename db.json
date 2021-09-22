@@ -7,11 +7,11 @@
         "name": "Mechelle Stewart",
 		"photo": "http://virtus-images.zzz.com.ua/user-02.png",
         "role": "Frontend developer",
-        "description": "Mauris interdum, quam sed fringilla elementum, nisl massa faucibus massa, in suscipit justo nisl vel nisl. Suspendisse ullamcorper scelerisque augue quis efficitur. Sed vitae dui diam. Nullam rutrum rhoncus velit eget porttitor.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "email": "exampleemail@gmail.com",
         "phone": "+438234123123",
-        "Adress": "65 Lorem St, Warsaw, PL",
-        "Organization": "Symu.co"
+        "address": "65 Lorem St, Warsaw, PL",
+        "organization": "Symu.co"
       },
       "conversation": [
         {
@@ -28,55 +28,55 @@
         },
         {
           "id": 3,
-          "name": "Me",
-					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
-          "message": "Donec molestie pretium sem maximus vulputate"
-        },
-        {
-          "id": 4,
           "name": "Mechelle Stewart",
 					"photo": "http://virtus-images.zzz.com.ua/user-02.png",
           "message": "Morbi fringilla erat sed ultrices suscipit. Vestibulum in rhoncus lacus, vel ornare diam. Pellentesque pretium, eros at scelerisque fringilla, nibh mauris tempus est, ac aliquet mauris arcu ut lacus."
-        }
+        },
+				{
+					"id": 4,
+					"name": "Me",
+					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
+					"message": "Donec molestie pretium sem maximus vulputate"
+				}
       ]
     },
     {
       "id": 1,
       "target": {
-        "name": "Mechelle Stewart",
-				"photo": "http://virtus-images.zzz.com.ua/user-01.png",
+        "name": "Lyall Roach",
+				"photo": "http://virtus-images.zzz.com.ua/user-04.png",
         "role": "UX/UI Designer",
-        "description": "Mauris interdum, quam sed fringilla elementum, nisl massa faucibus massa, in suscipit justo nisl vel nisl. Suspendisse ullamcorper scelerisque augue quis efficitur. Sed vitae dui diam. Nullam rutrum rhoncus velit eget porttitor.",
+        "description": "Est ullamcorper eget nulla facilisi etiam.",
         "email": "exampleemail@gmail.com",
         "phone": "+438234123123",
-        "Adress": "65 Lorem St, Warsaw, PL",
-        "Organization": "Symu.co"
+        "address": "65 Lorem St, Warsaw, PL",
+        "organization": "Symu.co"
       },
       "conversation": [
         {
           "id": 1,
-          "name": "Mechelle Stewart",
-					"photo": "http://virtus-images.zzz.com.ua/user-02.png",
-          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          "name": "Lyall Roach",
+					"photo": "http://virtus-images.zzz.com.ua/user-04.png",
+          "message": "Est ullamcorper eget nulla facilisi etiam."
         },
         {
           "id": 2,
           "name": "Me",
 					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
-          "message": "Etiam facilisis erat dui"
-        },
-        {
-          "id": 2,
-          "name": "Me",
-					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
-          "message": "Donec molestie pretium sem maximus vulputate"
+          "message": "Felis donec et odio pellentesque diam. Sit amet dictum sit amet justo donec enim diam."
         },
         {
           "id": 3,
-          "name": "Mechelle Stewart",
-					"photo": "http://virtus-images.zzz.com.ua/user-02.png",
-          "message": "Morbi fringilla erat sed ultrices suscipit. Vestibulum in rhoncus lacus, vel ornare diam. Pellentesque pretium, eros at scelerisque fringilla, nibh mauris tempus est, ac aliquet mauris arcu ut lacus."
-        }
+          "name": "Lyall Roach",
+					"photo": "http://virtus-images.zzz.com.ua/user-04.png",
+          "message": "Egestas egestas fringilla phasellus faucibus."
+        },
+				{
+					"id": 4,
+					"name": "Me",
+					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
+					"message": "Sed adipiscing diam donec adipiscing tristique risus nec."
+				}
       ]
     }
   ]
