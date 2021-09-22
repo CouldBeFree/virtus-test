@@ -4,6 +4,7 @@
       @selected="getSpecifiedData"
       :list="data"
       :conv="conv"
+      v-model="selectedId"
     />
 		<ChatConv :conv="conv" />
 		<ChatCompanion :companion="companion" />
@@ -29,7 +30,8 @@ export default {
 			list: null,
 			conv: null,
 			companion: null,
-      data: null
+      data: null,
+			selectedId: null
 		}
 	},
 	mounted() {
@@ -42,10 +44,10 @@ export default {
 			})
 	},
   methods: {
-		getSpecifiedData (query) {
+		getSpecifiedData (id) {
 			axios.get('/chat', {
 				params: {
-					id: query
+					id
         }
       })
       .then(res => {
