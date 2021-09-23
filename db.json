@@ -1,83 +1,83 @@
 {
-  "profile": { "name": "typicode" },
-  "chat": [
-    {
-      "id": 2,
-      "target": {
-        "name": "Mechelle Stewart",
-		"photo": "http://virtus-images.zzz.com.ua/user-02.png",
-        "role": "Frontend developer",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "email": "exampleemail@gmail.com",
-        "phone": "+438234123123",
-        "address": "65 Lorem St, Warsaw, PL",
-        "organization": "Symu.co"
-      },
-      "conversation": [
-        {
-          "id": 1,
-          "name": "Mechelle Stewart",
+	"profile": { "name": "typicode" },
+	"chat": [
+		{
+			"id": 2,
+			"target": {
+				"name": "Mechelle Stewart",
+				"photo": "http://virtus-images.zzz.com.ua/user-02.png",
+				"role": "Frontend developer",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+				"email": "exampleemail@gmail.com",
+				"phone": "+438234123123",
+				"address": "65 Lorem St, Warsaw, PL",
+				"organization": "Symu.co"
+			},
+			"conversation": [
+				{
+					"id": 1,
+					"name": "Mechelle Stewart",
 					"photo": "http://virtus-images.zzz.com.ua/user-02.png",
-          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-        },
-        {
-          "id": 2,
-          "name": "Me",
+					"message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+				},
+				{
+					"id": 2,
+					"name": "Me",
 					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
-          "message": "Etiam facilisis erat dui"
-        },
-        {
-          "id": 3,
-          "name": "Mechelle Stewart",
+					"message": "Etiam facilisis erat dui"
+				},
+				{
+					"id": 3,
+					"name": "Mechelle Stewart",
 					"photo": "http://virtus-images.zzz.com.ua/user-02.png",
-          "message": "Morbi fringilla erat sed ultrices suscipit. Vestibulum in rhoncus lacus, vel ornare diam. Pellentesque pretium, eros at scelerisque fringilla, nibh mauris tempus est, ac aliquet mauris arcu ut lacus."
-        },
+					"message": "Morbi fringilla erat sed ultrices suscipit. Vestibulum in rhoncus lacus, vel ornare diam. Pellentesque pretium, eros at scelerisque fringilla, nibh mauris tempus est, ac aliquet mauris arcu ut lacus."
+				},
 				{
 					"id": 4,
 					"name": "Me",
 					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
 					"message": "Donec molestie pretium sem maximus vulputate"
 				}
-      ]
-    },
-    {
-      "id": 1,
-      "target": {
-        "name": "Lyall Roach",
+			]
+		},
+		{
+			"id": 1,
+			"target": {
+				"name": "Lyall Roach",
 				"photo": "http://virtus-images.zzz.com.ua/user-04.png",
-        "role": "UX/UI Designer",
-        "description": "Est ullamcorper eget nulla facilisi etiam.",
-        "email": "exampleemail@gmail.com",
-        "phone": "+438234123123",
-        "address": "65 Lorem St, Warsaw, PL",
-        "organization": "Symu.co"
-      },
-      "conversation": [
-        {
-          "id": 1,
-          "name": "Lyall Roach",
+				"role": "UX/UI Designer",
+				"description": "Est ullamcorper eget nulla facilisi etiam.",
+				"email": "exampleemail@gmail.com",
+				"phone": "+438234123123",
+				"address": "65 Lorem St, Warsaw, PL",
+				"organization": "Symu.co"
+			},
+			"conversation": [
+				{
+					"id": 1,
+					"name": "Lyall Roach",
 					"photo": "http://virtus-images.zzz.com.ua/user-04.png",
-          "message": "Est ullamcorper eget nulla facilisi etiam."
-        },
-        {
-          "id": 2,
-          "name": "Me",
+					"message": "Est ullamcorper eget nulla facilisi etiam."
+				},
+				{
+					"id": 2,
+					"name": "Me",
 					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
-          "message": "Felis donec et odio pellentesque diam. Sit amet dictum sit amet justo donec enim diam."
-        },
-        {
-          "id": 3,
-          "name": "Lyall Roach",
+					"message": "Felis donec et odio pellentesque diam. Sit amet dictum sit amet justo donec enim diam."
+				},
+				{
+					"id": 3,
+					"name": "Lyall Roach",
 					"photo": "http://virtus-images.zzz.com.ua/user-04.png",
-          "message": "Egestas egestas fringilla phasellus faucibus."
-        },
+					"message": "Egestas egestas fringilla phasellus faucibus."
+				},
 				{
 					"id": 4,
 					"name": "Me",
 					"photo": "http://virtus-images.zzz.com.ua/user-01.png",
 					"message": "Sed adipiscing diam donec adipiscing tristique risus nec."
 				}
-      ]
-    }
-  ]
+			]
+		}
+	]
 }
