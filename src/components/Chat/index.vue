@@ -1,11 +1,11 @@
 <template>
 	<div class="chat">
 		<ChatList
-      @selected="getSpecifiedData"
-      :list="data"
-      :conv="conv"
-      v-model="selectedId"
-    />
+				@selected="getSpecifiedData"
+				:list="data"
+				:conv="conv"
+				v-model="selectedId"
+		/>
 		<ChatConv :conv="conv" />
 		<ChatCompanion :companion="companion" />
 	</div>
@@ -30,37 +30,40 @@ export default {
 			list: null,
 			conv: null,
 			companion: null,
-      data: null,
+			data: null,
 			selectedId: null
 		}
 	},
 	mounted() {
-		axios.get('/chat')
-			.then((res) => {
-				this.data = res
-			})
-			.catch(e => {
-				console.error(e)
-			})
+		this.showChat();
 	},
-  methods: {
+	methods: {
 		getSpecifiedData (id) {
 			axios.get('/chat', {
 				params: {
 					id
-        }
-      })
-      .then(res => {
-				this.conv =  res[0].conversation;
-				this.companion = res[0].target;
-      })
-    }
-  }
+				}
+			})
+					.then(res => {
+						this.conv =  res[0].conversation;
+						this.companion = res[0].target;
+					})
+		},
+		showChat() {
+			axios.get('/chat')
+					.then((res) => {
+						this.data = res
+					})
+					.catch(e => {
+						console.error(e)
+					})
+		}
+	}
 }
 </script>
 
 <style scoped>
-	.chat  {
-		display: flex;
-	}
+.chat  {
+	display: flex;
+}
 </style>

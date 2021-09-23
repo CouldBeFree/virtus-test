@@ -11,6 +11,7 @@
 
 <script>
 import projectCard from "./components/projectCard";
+import {axios} from "../../utils/axios";
 
 export default {
 	name: "Projects",
@@ -21,6 +22,20 @@ export default {
 	},
 	components: {
 		projectCard
+	},
+	mounted() {
+		this.showProjects();
+	},
+	methods: {
+		showProjects() {
+			axios.get('/projects')
+					.then((res) => {
+						this.data = res
+					})
+					.catch(e => {
+						console.error(e)
+					})
+		}
 	}
 }
 </script>
