@@ -8,7 +8,7 @@
 				<h1>projects</h1>
 			</div>
 			<div class="home-content__item content-item--middle">
-				<h1>Report</h1>
+				<BarChart />
 			</div>
 			<div class="home-content__item content-item--small">
 				<h1>Inbox</h1>
@@ -22,10 +22,12 @@
 
 <script>
 import Calendar from "../components/Calendar";
+import BarChart from "../components/BarChart"
 
 export default {
 	components: {
-		Calendar
+		Calendar,
+		BarChart
 	},
 	name: "Home"
 }
