@@ -1,5 +1,32 @@
 {
 	"profile": { "name": "typicode" },
+	"company-size": [
+		{
+			"id": 1,
+			"value": 90,
+			"name": "Small-1"
+		},
+		{
+			"id": 2,
+			"value": 70,
+			"name": "Small-1"
+		},
+		{
+			"id": 3,
+			"value": 60,
+			"name": "Small-1"
+		},
+		{
+			"id": 4,
+			"value": 50,
+			"name": "Small-1"
+		},
+		{
+			"id": 5,
+			"value": 55,
+			"name": "Small-1"
+		}
+	],
 	"projects": [
 		{
 			"id": 1,
