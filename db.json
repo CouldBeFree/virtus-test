@@ -9,22 +9,22 @@
 		{
 			"id": 2,
 			"value": 70,
-			"name": "Small-1"
+			"name": "Small-2"
 		},
 		{
 			"id": 3,
 			"value": 60,
-			"name": "Small-1"
+			"name": "Medium"
 		},
 		{
 			"id": 4,
 			"value": 50,
-			"name": "Small-1"
+			"name": "Large"
 		},
 		{
 			"id": 5,
 			"value": 55,
-			"name": "Small-1"
+			"name": "Large"
 		}
 	],
 	"projects": [

@@ -1,12 +1,18 @@
 <template>
 	<div>
-		<h1>Chart item</h1>
+		{{data}}
 	</div>
 </template>
 
 <script>
 export default {
-	name: "BarChartItem"
+	name: "BarChartItem",
+  props: {
+		data: {
+			required: true,
+      default: () => {}
+    }
+  }
 }
 </script>
 
