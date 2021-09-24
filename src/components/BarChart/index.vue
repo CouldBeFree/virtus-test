@@ -2,11 +2,11 @@
 	<div class="graph-block">
 		<h3>Based on company size</h3>
 		<div class="graph-block__inner">
-			<div class="graph-block__average"></div>
 			<BarChartItem
 					v-for="item in chartData"
 					:key="item.key"
 					:data="item"
+					:ave="sumValues"
 			/>
 		</div>
 
@@ -21,7 +21,10 @@ export default {
 	name: "BarChart",
 	data() {
 		return {
-			chartData: null
+			chartData: null,
+			averageValue: null,
+			valuesArray: [],
+			sumValues: null
 		}
 	},
 	components: {
@@ -31,10 +34,28 @@ export default {
 		this.getData()
 	},
 	methods: {
+		//в
+		countAverage(array) {
+			let total = 0,
+			count = 0;
+			array.forEach((item) => {
+				total += item;
+				count++;
+			});
+			return this.sumValues = total / count;
+		},
+		createArray(res) {
+			res.forEach((element) => {
+				this.valuesArray.push(element.value);
+			})
+			this.countAverage(this.valuesArray)
+		},
 		getData() {
 			axios.get('/company-size')
 					.then((res) => {
-						this.chartData = res
+						this.chartData = res;
+						this.averageValue = this.createArray(res);
+						console.log(`Average value ${this.sumValues}`);
 					})
 					.catch(e => {
 						console.error(e)
@@ -58,6 +79,7 @@ export default {
 .graph-block__inner {
 	display: flex;
 	position: relative;
+	height: 140px;
 }
 .graph-block__average {
 	position: absolute;
