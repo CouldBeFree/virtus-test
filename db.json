@@ -1,5 +1,51 @@
 {
 	"profile": { "name": "typicode" },
+	"my-projects": [
+		{
+			"id": 1,
+			"name": "Mobile app",
+			"company": "Symu.co",
+			"price": "1500"
+		},
+		{
+			"id": 2,
+			"name": "New dashboard",
+			"company": "Symu.co",
+			"price": "1500"
+		},
+		{
+			"id": 3,
+			"name": "Landing page",
+			"company": "Symu.co",
+			"price": "1500"
+		},
+		{
+			"id": 4,
+			"name": "New website",
+			"company": "Symu.co",
+			"price": "1500"
+		}
+	],
+	"inbox": [
+		{
+			"id": 1,
+			"name": "Michelle Stewart",
+			"message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eros eros.",
+			"time": "Today, 5,32 PM"
+		},
+		{
+			"id": 2,
+			"name": "Jolene Starter",
+			"message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eros eros.",
+			"time": "Today, 5,32 PM"
+		},
+		{
+			"id": 3,
+			"name": "Lyall Roach",
+			"message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eros eros.",
+			"time": "Today, 5,32 PM"
+		}
+	],
 	"company-size": [
 		{
 			"id": 1,
