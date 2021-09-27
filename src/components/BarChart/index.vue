@@ -6,10 +6,9 @@
 					v-for="item in chartData"
 					:key="item.key"
 					:data="item"
-					:ave="sumValues"
+					:ave="averageValue"
 			/>
 		</div>
-
 	</div>
 </template>
 
@@ -22,9 +21,7 @@ export default {
 	data() {
 		return {
 			chartData: null,
-			averageValue: null,
-			valuesArray: [],
-			sumValues: null
+			averageValue: null
 		}
 	},
 	components: {
@@ -34,28 +31,18 @@ export default {
 		this.getData()
 	},
 	methods: {
-		//в
 		countAverage(array) {
-			let total = 0,
-			count = 0;
-			array.forEach((item) => {
-				total += item;
-				count++;
-			});
-			return this.sumValues = total / count;
-		},
-		createArray(res) {
-			res.forEach((element) => {
-				this.valuesArray.push(element.value);
-			})
-			this.countAverage(this.valuesArray)
+			let total = 0
+			for (const item of array) {
+				total += item.value
+      }
+			this.averageValue = total / array.length
 		},
 		getData() {
 			axios.get('/company-size')
 					.then((res) => {
 						this.chartData = res;
-						this.averageValue = this.createArray(res);
-						console.log(`Average value ${this.sumValues}`);
+						this.countAverage(res);
 					})
 					.catch(e => {
 						console.error(e)
