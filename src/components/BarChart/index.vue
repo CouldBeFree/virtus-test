@@ -2,6 +2,7 @@
 	<div class="graph-block">
 		<h3>Based on company size</h3>
 		<div class="graph-block__inner">
+			<div class="graph-block__average" :style="{ bottom: `${((140 -31) * (averageValue / 100)) + 31}px` }"></div>
 			<BarChartItem
 					v-for="item in chartData"
 					:key="item.key"
@@ -71,7 +72,6 @@ export default {
 .graph-block__average {
 	position: absolute;
 	left: 0;
-	top: 30%;
 	width: 100%;
 	border-bottom: 1px dashed #21a6c8;
 }

@@ -1,7 +1,7 @@
 <template>
 	<div class="graph-item">
 		<div class="graph-item__wrap">
-			<div class="graph-item__average" :style="{ bottom: `${ave}%` }"></div>
+<!--			<div class="graph-item__average" :style="{ bottom: `${ave}%` }"></div>-->
 			<div class="graph-item__inner">
 				<div class="graph-item__value">
 					<div class="graph-item__fill" :style="{ height: `${data.value}%` }">
@@ -47,12 +47,12 @@ export default {
 	justify-content: center;
 	flex-grow: 2;
 }
-.graph-item__average {
+/*.graph-item__average {
 	position: absolute;
 	left: 0;
 	width: 100%;
 	border-bottom: 1px dashed #21a6c8;
-}
+}*/
 .graph-item__inner {
 	height: 100%;
 }
